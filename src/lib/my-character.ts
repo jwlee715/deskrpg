@@ -64,7 +64,7 @@ export function isMyCharacter(mine: MyCharacter | null, characterId: string): bo
   return !!mine && mine.id === characterId;
 }
 
-/** Validates `bio` input — shared by POST/PATCH. Empty becomes null; over 2,000 chars is rejected. */
+/** Validates `bio` input — shared by POST/PATCH. Empty becomes null; over 3,000 chars is rejected. */
 export function validateBio(
   value: unknown,
 ):

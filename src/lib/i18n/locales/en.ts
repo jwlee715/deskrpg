@@ -2694,7 +2694,7 @@ const en: Record<string, string> = {
   "errors.characterNameLengthInvalid": "Name must be 1-50 characters",
   "errors.maxCharactersReached": "You have reached the maximum number of characters",
   "errors.characterAlreadyExists": "You already have a character",
-  "errors.characterBioTooLong": "Bio must be 2,000 characters or fewer",
+  "errors.characterBioTooLong": "Bio must be 3,000 characters or fewer",
   "errors.characterBioInvalid": "Bio is invalid",
   "errors.failedToUpdateCharacter": "Failed to update character",
   "errors.failedToCreateCharacter": "Failed to create character",
