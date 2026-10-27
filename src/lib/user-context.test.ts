@@ -23,10 +23,19 @@ test("with no bio, only the name is included, and newlines fold into spaces", ()
   );
 });
 
-test("a bio longer than 2,000 characters is truncated", () => {
-  const out = formatUserContext({ name: "a", bio: "가".repeat(2500) });
-  assert.ok(out.length <= "[대화 상대] 이름: a · 소개: ".length + 2000 + 1);
-  assert.ok(out.endsWith("…"));
+test("a 3,000-character bio is preserved in conversation and task context", () => {
+  const bio = "가".repeat(3000);
+  const ctx = { name: "a", bio };
+  assert.equal(formatUserContext(ctx), `[대화 상대] 이름: a · 소개: ${bio}`);
+  assert.equal(prefixUserContext("안녕", ctx), `[대화 상대] 이름: a · 소개: ${bio}\n\n안녕`);
+  assert.equal(requesterLine(ctx), `요청자: a — ${bio}`);
+});
+
+test("a bio longer than 3,000 characters is truncated", () => {
+  const bio = "가".repeat(3000);
+  const ctx = { name: "a", bio: `${bio}나` };
+  assert.equal(formatUserContext(ctx), `[대화 상대] 이름: a · 소개: ${bio}…`);
+  assert.equal(requesterLine(ctx), `요청자: a — ${bio}…`);
 });
 
 test("prefixUserContext prepends it, and returns the original text as-is with no context", () => {

@@ -38,7 +38,7 @@ export const characters = pgTable(
       .references(() => users.id, { onDelete: "cascade" }),
     name: varchar("name", { length: 50 }).notNull(),
     appearance: jsonb("appearance").notNull(),
-    /** Free-text bio — prepended to every conversation sent to the NPC (spec 2026-09-18). The server enforces a 2,000-char cap. */
+    /** Free-text bio — prepended to every conversation sent to the NPC (spec 2026-09-18). The server enforces a 3,000-char cap. */
     bio: text("bio"),
     createdAt: timestamp("created_at", { withTimezone: true }).defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).defaultNow(),

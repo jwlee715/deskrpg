@@ -2711,7 +2711,7 @@ const ja: Record<string, string> = {
   "errors.characterNameLengthInvalid": "名前は1〜50文字で入力してください",
   "errors.maxCharactersReached": "作成できるキャラクター数の上限に達しました",
   "errors.characterAlreadyExists": "すでにキャラクターを持っています",
-  "errors.characterBioTooLong": "自己紹介は2,000文字以内で入力してください",
+  "errors.characterBioTooLong": "自己紹介は3,000文字以内で入力してください",
   "errors.characterBioInvalid": "自己紹介の値が正しくありません",
   "errors.failedToUpdateCharacter": "キャラクターの更新に失敗しました",
   "errors.failedToCreateCharacter": "キャラクターの作成に失敗しました",

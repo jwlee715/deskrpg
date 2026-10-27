@@ -2580,7 +2580,7 @@ const zh: Record<string, string> = {
   "errors.characterNameLengthInvalid": "名称必须为 1 到 50 个字符",
   "errors.maxCharactersReached": "已达到可创建角色的上限",
   "errors.characterAlreadyExists": "您已经拥有一个角色",
-  "errors.characterBioTooLong": "简介不能超过 2,000 个字符",
+  "errors.characterBioTooLong": "简介不能超过 3,000 个字符",
   "errors.characterBioInvalid": "简介的值无效",
   "errors.failedToUpdateCharacter": "更新角色失败",
   "errors.failedToCreateCharacter": "创建角色失败",

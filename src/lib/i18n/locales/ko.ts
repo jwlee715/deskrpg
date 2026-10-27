@@ -2681,7 +2681,7 @@ const ko: Record<string, string> = {
   "errors.characterNameLengthInvalid": "이름은 1~50자여야 합니다",
   "errors.maxCharactersReached": "생성 가능한 캐릭터 수에 도달했습니다",
   "errors.characterAlreadyExists": "이미 캐릭터가 있습니다",
-  "errors.characterBioTooLong": "소개는 2,000자를 넘을 수 없습니다",
+  "errors.characterBioTooLong": "소개는 3,000자를 넘을 수 없습니다",
   "errors.characterBioInvalid": "소개 값이 올바르지 않습니다",
   "errors.failedToUpdateCharacter": "캐릭터 수정에 실패했습니다",
   "errors.failedToCreateCharacter": "캐릭터 생성에 실패했습니다",
